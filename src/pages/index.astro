@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 const BOOK_TITLE = "The Last Man in Narvik";
 const BOOK_AUTHOR = "Timothy Brits";
-const BOOK_TAGLINE = "A Novel";
+const BOOK_TAGLINE = "A Novella";
 
 const allChapters = await getCollection("chapters");
 const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
