@@ -34,14 +34,14 @@
 }
 
 :root {
-  --bg: #faf7f2;
-  --bg-subtle: #f0ebe1;
-  --bg-hover: #e8e0d2;
-  --text: #1c1611;
-  --text-muted: #6b5a46;
-  --accent: #8b6443;
-  --accent-dark: #6b4e33;
-  --border: #ddd4c4;
+  --bg: #1c1917;
+  --bg-subtle: #252118;
+  --bg-hover: #2f2b22;
+  --text: #e8dfc8;
+  --text-muted: #9d8e75;
+  --accent: #c49a6c;
+  --accent-dark: #d4aa7c;
+  --border: #352f25;
 
   --font-serif: "Lora Variable", Georgia, "Times New Roman", serif;
   --font-display: "Playfair Display Variable", Georgia, serif;
