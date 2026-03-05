@@ -38,7 +38,7 @@
   --bg-subtle: #252118;
   --bg-hover: #2f2b22;
   --text: #e8dfc8;
-  --text-muted: #9d8e75;
+  --text-muted: #b0a07d;
   --accent: #c49a6c;
   --accent-dark: #d4aa7c;
   --border: #352f25;
@@ -67,6 +67,19 @@
   --measure: 65ch;
   --measure-wide: 80ch;
   --page-padding: clamp(1rem, 5vw, 2rem);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #faf8f5;
+    --bg-subtle: #f0ede6;
+    --bg-hover: #e8e3d8;
+    --text: #1c1917;
+    --text-muted: #6b5d48;
+    --accent: #a07840;
+    --accent-dark: #8a6530;
+    --border: #d4c9b5;
+  }
 }
 
 *,
@@ -246,6 +259,27 @@ a:hover {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--page-padding);
+  background: var(--bg);
+  color: var(--accent);
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--accent);
+  border-radius: 0 0 6px 6px;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-decoration: none;
+  z-index: 100;
+  transition: top 0.1s;
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 .sr-only {

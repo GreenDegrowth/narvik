@@ -47,12 +47,12 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
       <div class="book-rule" aria-hidden="true"></div>
     </header>
 
-    <a id="continue-btn" href="#" class="continue-btn" hidden>
+    <a id="continue-btn" href="/" class="continue-btn" hidden>
       <span class="continue-btn__label">Continue reading</span>
       <span class="continue-btn__title" id="continue-title"></span>
     </a>
 
-    <main>
+    <main id="main-content">
       <nav aria-label="Table of contents">
         <ol class="chapter-list">
           {

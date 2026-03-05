@@ -51,7 +51,7 @@ const chapterNumber = String(order).padStart(2, "0");
       <span class="nav-chapter-label" aria-hidden="true">Chapter {order}</span>
     </nav>
 
-    <main class="chapter-main">
+    <main id="main-content" class="chapter-main">
       <!-- Chapter header -->
       <header class="chapter-header">
         <span class="chapter-number" aria-label={`Chapter ${order}`}>{chapterNumber}</span>
@@ -76,8 +76,14 @@ const chapterNumber = String(order).padStart(2, "0");
         <div class="chapter-pagination">
           {
             prevChapter ? (
-              <a href={`/chapters/${prevChapter.slug}`} class="page-link page-link--prev">
-                <span class="page-link__dir">← Previous</span>
+              <a
+                href={`/chapters/${prevChapter.slug}`}
+                class="page-link page-link--prev"
+                aria-label={`Previous chapter: ${prevChapter.title}`}
+              >
+                <span class="page-link__dir" aria-hidden="true">
+                  ← Previous
+                </span>
                 <span class="page-link__title">{prevChapter.title}</span>
               </a>
             ) : (
@@ -89,8 +95,14 @@ const chapterNumber = String(order).padStart(2, "0");
 
           {
             nextChapter ? (
-              <a href={`/chapters/${nextChapter.slug}`} class="page-link page-link--next">
-                <span class="page-link__dir">Next →</span>
+              <a
+                href={`/chapters/${nextChapter.slug}`}
+                class="page-link page-link--next"
+                aria-label={`Next chapter: ${nextChapter.title}`}
+              >
+                <span class="page-link__dir" aria-hidden="true">
+                  Next →
+                </span>
                 <span class="page-link__title">{nextChapter.title}</span>
               </a>
             ) : (
@@ -228,6 +240,11 @@ const chapterNumber = String(order).padStart(2, "0");
     font-family: var(--font-sans);
     font-size: var(--text-sm);
     transition: color 0.15s ease;
+    padding: var(--space-sm) 0;
+    min-height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .page-link:hover {
@@ -244,6 +261,7 @@ const chapterNumber = String(order).padStart(2, "0");
     letter-spacing: 0.1em;
     text-transform: uppercase;
     align-self: center;
+    align-items: center;
   }
 
   .page-link__dir {
