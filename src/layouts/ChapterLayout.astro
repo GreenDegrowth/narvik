@@ -108,6 +108,21 @@ const chapterNumber = String(order).padStart(2, "0");
   </div>
 </Layout>
 
+<script
+  define:vars={{
+    _slug: Astro.url.pathname.replace("/chapters/", ""),
+    _title: title,
+    _order: order,
+  }}
+>
+  try {
+    localStorage.setItem(
+      "narvik_lastRead",
+      JSON.stringify({ slug: _slug, title: _title, order: _order })
+    );
+  } catch (_) {}
+</script>
+
 <style>
   /* ── Wrapper ─────────────────────────────────────────── */
   .site-wrapper {
@@ -187,8 +202,8 @@ const chapterNumber = String(order).padStart(2, "0");
 
   /* ── Footer pagination ───────────────────────────────── */
   .chapter-footer {
-    margin-top: var(--space-3xl);
-    padding-top: var(--space-xl);
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-lg);
     border-top: 1px solid var(--border);
   }
 

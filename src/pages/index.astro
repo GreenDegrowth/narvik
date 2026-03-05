@@ -47,6 +47,11 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
       <div class="book-rule" aria-hidden="true"></div>
     </header>
 
+    <a id="continue-btn" href="#" class="continue-btn" hidden>
+      <span class="continue-btn__label">Continue reading</span>
+      <span class="continue-btn__title" id="continue-title"></span>
+    </a>
+
     <main>
       <nav aria-label="Table of contents">
         <ol class="chapter-list">
@@ -80,8 +85,23 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
   </div>
 </Layout>
 
+<script>
+  const raw = localStorage.getItem("narvik_lastRead");
+  if (raw) {
+    try {
+      const { slug, title } = JSON.parse(raw);
+      const btn = document.getElementById("continue-btn");
+      const titleEl = document.getElementById("continue-title");
+      if (btn && titleEl) {
+        btn.setAttribute("href", `/chapters/${slug}`);
+        titleEl.textContent = title;
+        btn.removeAttribute("hidden");
+      }
+    } catch (_) {}
+  }
+</script>
+
 <style>
-  /* ── Page wrapper ────────────────────────────────────── */
   .toc-wrapper {
     min-height: 100vh;
     display: flex;
@@ -90,12 +110,11 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
     padding: var(--space-2xl) var(--page-padding) var(--space-xl);
   }
 
-  /* ── Book header ─────────────────────────────────────── */
   .book-header {
     text-align: center;
     max-width: var(--measure-wide);
     width: 100%;
-    margin-bottom: var(--space-3xl);
+    margin-bottom: var(--space-2xl);
   }
 
   .book-author {
@@ -162,7 +181,43 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
     margin: 0 auto;
   }
 
-  /* ── Chapter list ────────────────────────────────────── */
+  .continue-btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin: 0 auto var(--space-xl);
+    padding: var(--space-sm) var(--space-xl);
+    text-decoration: none;
+    background: var(--bg-hover);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition:
+      border-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  .continue-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .continue-btn__label {
+    font-family: var(--font-sans);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .continue-btn__title {
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: var(--text);
+  }
+
   .chapter-list {
     list-style: none;
     max-width: var(--measure);
@@ -229,7 +284,6 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
     line-height: 1.5;
   }
 
-  /* ── Footer ──────────────────────────────────────────── */
   .site-footer {
     margin-top: auto;
     padding-top: var(--space-2xl);
@@ -243,7 +297,6 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
     margin-top: var(--space-xs);
   }
 
-  /* ── Mobile ──────────────────────────────────────────── */
   @media (max-width: 480px) {
     .chapter-link {
       grid-template-columns: 2.5rem 1fr;
