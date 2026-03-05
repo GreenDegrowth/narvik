@@ -1,21 +1,31 @@
 ---
 import { getCollection } from "astro:content";
+import { Schema } from "astro-seo-schema";
+import { config } from "../config";
 import Layout from "../layouts/Layout.astro";
-
-const BOOK_TITLE = "The Last Man in Narvik";
-const BOOK_AUTHOR = "Timothy Brits";
-const BOOK_TAGLINE = "A Novel";
 
 const allChapters = await getCollection("chapters");
 const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
 ---
 
-<Layout title={BOOK_TITLE} description={`${BOOK_TAGLINE} by ${BOOK_AUTHOR}.`}>
+<Layout title={config.title} description={config.description}>
+  <Schema
+    item={{
+      "@context": "https://schema.org",
+      "@type": "Book",
+      name: config.title,
+      author: { "@type": "Person", name: config.author },
+      description: config.description,
+      url: config.siteUrl,
+      inLanguage: "en",
+      license: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    }}
+  />
   <div class="toc-wrapper">
     <header class="book-header">
-      <p class="book-author">{BOOK_AUTHOR}</p>
-      <h1 class="book-title">{BOOK_TITLE}</h1>
-      <p class="book-tagline">{BOOK_TAGLINE}</p>
+      <p class="book-author">{config.author}</p>
+      <h1 class="book-title">{config.title}</h1>
+      <p class="book-tagline">{config.tagline}</p>
       <a href="/The_Last_Man_in_Narvik.pdf" download class="download-btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +70,7 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
     </main>
 
     <footer class="site-footer">
-      <p>© {new Date().getFullYear()} {BOOK_AUTHOR}</p>
+      <p>© {new Date().getFullYear()} {config.author}</p>
       <p class="site-license">
         Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license"
           >CC BY-NC-SA 4.0</a

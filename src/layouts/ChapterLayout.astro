@@ -1,4 +1,6 @@
 ---
+import { Schema } from "astro-seo-schema";
+import { config } from "../config";
 import Layout from "./Layout.astro";
 
 interface Props {
@@ -20,13 +22,28 @@ const {
   epigraphAuthor,
   prevChapter,
   nextChapter,
-  bookTitle = "The Last Man in Narvik",
+  bookTitle = config.title,
 } = Astro.props;
 
 const chapterNumber = String(order).padStart(2, "0");
 ---
 
-<Layout title={`${title} — ${bookTitle}`} description={description ?? ""}>
+<Layout title={`${title} — ${bookTitle}`} description={description ?? config.description}>
+  <Schema
+    item={{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: config.title, item: config.siteUrl },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: title,
+          item: `${config.siteUrl}${Astro.url.pathname}`,
+        },
+      ],
+    }}
+  />
   <div class="site-wrapper">
     <!-- Top nav -->
     <nav class="chapter-nav top-nav" aria-label="Site navigation">
