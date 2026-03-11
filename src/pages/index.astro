@@ -158,7 +158,6 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
     padding: var(--space-sm) var(--space-lg);
     border-radius: 6px;
     text-decoration: none;
-    transition: all 0.2s ease;
     margin-bottom: var(--space-xl);
   }
 
@@ -166,12 +165,21 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
     background: var(--accent);
     color: white;
     border-color: var(--accent);
-    transform: translateY(-1px);
   }
 
   .download-btn svg {
-    width: 16px;
-    height: 16px;
+    width: 1em;
+    height: 1em;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .download-btn {
+      transition: all 0.2s ease;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-1px);
+    }
   }
 
   .book-rule {
@@ -192,9 +200,14 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
     background: var(--bg-hover);
     border: 1px solid var(--border);
     border-radius: 6px;
-    transition:
-      border-color 0.2s ease,
-      color 0.2s ease;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .continue-btn {
+      transition:
+        border-color 0.2s ease,
+        color 0.2s ease;
+    }
   }
 
   .continue-btn:hover {
@@ -242,8 +255,13 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
     padding: var(--space-lg) var(--space-sm);
     text-decoration: none;
     color: var(--text);
-    transition: background 0.15s ease;
     border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .chapter-link {
+      transition: background 0.15s ease;
+    }
   }
 
   .chapter-link:hover {
@@ -297,7 +315,7 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
     margin-top: var(--space-xs);
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     .chapter-link {
       grid-template-columns: 2.5rem 1fr;
     }

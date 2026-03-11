@@ -126,7 +126,12 @@ a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  transition: color 0.15s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a {
+    transition: color 0.15s ease;
+  }
 }
 
 a:hover {
@@ -279,7 +284,12 @@ a:hover {
   font-weight: 500;
   text-decoration: none;
   z-index: 100;
-  transition: top 0.1s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skip-link {
+    transition: top 0.1s;
+  }
 }
 
 .skip-link:focus {

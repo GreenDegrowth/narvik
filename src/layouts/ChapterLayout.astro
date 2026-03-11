@@ -239,12 +239,17 @@ const chapterNumber = String(order).padStart(2, "0");
     color: var(--text-muted);
     font-family: var(--font-sans);
     font-size: var(--text-sm);
-    transition: color 0.15s ease;
     padding: var(--space-sm) 0;
     min-height: 44px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .page-link {
+      transition: color 0.15s ease;
+    }
   }
 
   .page-link:hover {
@@ -280,7 +285,7 @@ const chapterNumber = String(order).padStart(2, "0");
   }
 
   /* ── Mobile adjustments ──────────────────────────────── */
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     .chapter-pagination {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto auto;
