@@ -1,11 +1,16 @@
 {
   "name": "The Last Man in Narvik",
   "short_name": "Narvik",
+  "description": "A narrative exploring resistance, survival, and the human cost of war in occupied Norway during World War II.",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
     { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
   ],
   "theme_color": "#c49a6c",
   "background_color": "#1c1917",
-  "display": "standalone"
+  "display": "standalone",
+  "lang": "en",
+  "dir": "ltr"
 }
