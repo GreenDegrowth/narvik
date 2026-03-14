@@ -1,5 +1,4 @@
 ---
-import { Schema } from "astro-seo-schema";
 import { config } from "../config";
 import Layout from "./Layout.astro";
 
@@ -29,8 +28,9 @@ const chapterNumber = String(order).padStart(2, "0");
 ---
 
 <Layout title={`${title} — ${bookTitle}`} description={description ?? config.description}>
-  <Schema
-    item={{
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -42,7 +42,7 @@ const chapterNumber = String(order).padStart(2, "0");
           item: `${config.siteUrl}${Astro.url.pathname}`,
         },
       ],
-    }}
+    })}
   />
   <div class="site-wrapper">
     <!-- Top nav -->

@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import { Schema } from "astro-seo-schema";
 import { config } from "../config";
 import Layout from "../layouts/Layout.astro";
 
@@ -9,8 +8,9 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout title={config.title} description={config.description}>
-  <Schema
-    item={{
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Book",
       name: config.title,
@@ -19,7 +19,7 @@ const chapters = allChapters.sort((a, b) => a.data.order - b.data.order);
       url: config.siteUrl,
       inLanguage: "en",
       license: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    }}
+    })}
   />
   <div class="toc-wrapper">
     <header class="book-header">
