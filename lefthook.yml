@@ -1,0 +1,6 @@
+pre-commit:
+  commands:
+    format:
+      glob: "*.{astro,ts,css,json,md}"
+      run: npx prettier --write --experimental-cli {staged_files}
+      stage_fixed: true

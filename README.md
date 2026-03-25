@@ -20,9 +20,7 @@ This project presents a chapter-based narrative set during the Battles of Narvik
 ├── public/              # Static assets
 ├── src/
 │   ├── assets/         # Images and media
-│   ├── components/     # Reusable Astro components
 │   ├── content/
-│   │   ├── config.ts   # Content collection schema
 │   │   └── chapters/   # 10 markdown chapters (01-10)
 │   ├── layouts/
 │   │   ├── Layout.astro        # Base layout
@@ -33,7 +31,8 @@ This project presents a chapter-based narrative set during the Battles of Narvik
 │   │       └── [slug].astro    # Dynamic chapter routes
 │   ├── styles/
 │   │   └── global.css  # Global styles
-│   └── config.ts       # Site configuration
+│   ├── config.ts       # Site configuration
+│   └── content.config.ts # Content collection schema
 └── package.json
 ```
 
@@ -41,13 +40,14 @@ This project presents a chapter-based narrative set during the Battles of Narvik
 
 All commands are run from the root of the project:
 
-| Command           | Action                                     |
-| :---------------- | :----------------------------------------- |
-| `npm install`     | Install dependencies                       |
-| `npm run dev`     | Start local dev server at `localhost:4321` |
-| `npm run build`   | Build production site to `./dist/`         |
-| `npm run preview` | Preview build locally before deploying     |
-| `npm run format`  | Format code with Prettier                  |
+| Command                | Action                                     |
+| :--------------------- | :----------------------------------------- |
+| `npm install`          | Install dependencies                       |
+| `npm run dev`          | Start local dev server at `localhost:4321` |
+| `npm run build`        | Build production site to `./dist/`         |
+| `npm run preview`      | Preview build locally before deploying     |
+| `npm run format`       | Format code with Prettier                  |
+| `npx lefthook install` | Install git hooks (run after cloning)      |
 
 ## Chapter Structure
 

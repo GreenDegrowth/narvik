@@ -9,6 +9,7 @@ interface Props {
 }
 
 const { title = config.title, description = config.description } = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, config.siteUrl).href;
 ---
 
 <!doctype html>
@@ -26,11 +27,11 @@ const { title = config.title, description = config.description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <meta name="author" content={config.author} />
-    <link rel="canonical" href={new URL(Astro.url.pathname, config.siteUrl).href} />
+    <link rel="canonical" href={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={`${config.siteUrl}/norway.webp`} />
-    <meta property="og:url" content={new URL(Astro.url.pathname, config.siteUrl).href} />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
