@@ -12,9 +12,13 @@ npm run format    # Prettier (astro, organize-imports, packagejson plugins)
 npm run lint      # ESLint with auto-fix (JS/TS/astro, unicorn ruleset)
 ```
 
-There are no tests. CI runs `npm run build` on Node 22.x and 24.x.
+There are no tests. CI runs `npm run build` on Node 24.x. Run `npm run build` locally before committing to catch type errors.
 
-Lefthook runs Prettier then ESLint (`--fix`) automatically on staged files at `pre-commit`. Run `npm run format` or `npm run lint` manually.
+Lefthook runs Prettier then ESLint (`--fix`) automatically on staged files at `pre-commit`. Run `npx lefthook install` after cloning to activate hooks. Run `npm run format` or `npm run lint` manually.
+
+## Safety
+
+- **Never deploy to production without explicit permission from the user.** Always ask first and wait for confirmation.
 
 ## Architecture
 
