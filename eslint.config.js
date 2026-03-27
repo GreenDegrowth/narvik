@@ -43,6 +43,7 @@ export default tseslint.config(
     language: "css/css",
     extends: [css.configs.recommended],
     rules: {
+      "css/use-baseline": "off",
       "css/use-layers": "off",
       "css/no-important": "off",
       "css/no-invalid-properties": "off",

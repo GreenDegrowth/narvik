@@ -57,6 +57,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  font-optical-sizing: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -101,14 +102,22 @@ a:hover {
 
 .prose {
   font-family: var(--font-serif);
-  font-size: var(--text-base);
-  line-height: 1.8;
+  font-size: var(--text-lg);
+  line-height: 1.75;
   color: var(--text);
   max-width: var(--measure);
+  font-variant-numeric: oldstyle-nums;
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1,
+    "kern" 1;
 }
 
 .prose p {
   margin-top: 1.4em;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .prose p:first-of-type {
@@ -122,12 +131,12 @@ a:hover {
 
 .prose > p:first-of-type::first-letter {
   font-family: var(--font-display);
-  font-size: 4.2em;
+  font-size: 4.5em;
   font-weight: 700;
-  line-height: 0.78;
+  line-height: 0.76;
   float: left;
-  margin-right: 0.08em;
-  margin-top: 0.06em;
+  margin-right: 0.07em;
+  margin-top: 0.07em;
   color: var(--accent);
 }
 
@@ -141,6 +150,7 @@ a:hover {
   color: var(--text);
   margin-top: 2.5em;
   margin-bottom: 0.6em;
+  text-rendering: optimizeLegibility;
 }
 
 .prose h2 {
@@ -168,11 +178,11 @@ a:hover {
 }
 
 .prose blockquote {
-  border-left: 2px solid var(--accent);
-  margin: var(--space-xl) 0 var(--space-xl) var(--space-md);
-  padding: var(--space-sm) var(--space-lg);
+  margin: var(--space-xl) var(--space-lg);
+  padding: 0;
   font-style: italic;
   color: var(--text-muted);
+  font-size: var(--text-lg);
 }
 
 .prose blockquote p {
