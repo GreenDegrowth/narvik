@@ -1,8 +1,12 @@
 // @ts-check
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
+import remarkSmartypants from 'remark-smartypants';
 
 export default defineConfig({
+  markdown: {
+    remarkPlugins: [remarkSmartypants],
+  },
   site: 'https://narvik.timothybrits.co.za',
   trailingSlash: 'never',
   output: 'static',
