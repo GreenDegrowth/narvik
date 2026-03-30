@@ -256,7 +256,7 @@ He had found me through Captain Blackwood, who had apparently maintained a list 
 
 He had survived. France, North Africa, Italy. Made it home to Wakefield in the summer of 1945, most of himself intact -- his words. He was working in his father's hardware shop. He had recently become engaged.
 
-I read the letter twice, then set it on the table beside the window. Outside, a Norwegian street in July, the long northern light making the afternoon last in the way it always had. Somewhere in Wakefield, Yorkshire, a former private with harmonica-playing hands was working in his father's shop and had thought carefully for a year about whether to write a letter to a Norwegian soldier he had met once for a few weeks in 1940.
+I read the letter twice, then set it on the table beside the window. Outside, a Norwegian street in July, the long northern light making the afternoon last in the way it always had. Somewhere in Wakefield, Yorkshire, a former private who had once crossed a camp with a bar of chocolate because it seemed like the thing to do was working in his father's shop and had thought carefully for a year about whether to write a letter to a Norwegian soldier he had met once for a few weeks in 1940.
 
 I got out paper and wrote back the same evening. I told him I was glad he had survived, that Norway was finding its way back to itself in the way that places do when given enough time and stubbornness. I told him the offer of the tour was noted and that I might one day take him up on it.
 
@@ -272,7 +272,7 @@ The fishing fleet was in, the catch being unloaded with the organised noise of a
 
 I stood at the edge of the wharf and let the smell be what it was.
 
-Somewhere below the surface of the fjord, the wreckage of the Blücher lay distributed across the seabed, along with the equipment of five years of occupation -- supplies and weapons and the material residue of a project that had run its course. Above it, Norway was reassembling itself. The process was not neat and was not without bitterness in places where bitterness had been earned. But it was underway.
+Far south in Oslofjord, the wreckage of the Blücher still lay on the seabed where the Oscarsborg guns had sent it on the first morning of the invasion. Above it, Norway was reassembling itself. The process was not neat and was not without bitterness in places where bitterness had been earned. But it was underway.
 
 I thought of what Dahl had said once, in the darkness outside a resistance cabin in the first autumn of occupation: that Norway endured. That the land was ours before there was a Germany and would be ours after their flags were taken down. He had offered it as certainty, and I had received it as something between comfort and performance. Standing in the cleared dark outside a mountain cabin, I had not been sure whether he believed it entirely or whether he simply knew that I needed to hear it.
 

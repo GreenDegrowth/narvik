@@ -307,7 +307,7 @@ In the workshop behind the public space, surrounded by leather and glue, I expla
 
 "Boat?"
 
-A thin smile. "Did you think you'd walk out of Trondheim? A fishing vessel is waiting in the fjord. Get everyone to this point by 0100 hours and it will take you to a British submarine rendezvous."
+A thin smile. "Did you think you'd walk out of Trondheim?" He extended his hand. "Hammer. That's what people call me. Has been since the first war." His grip was dry and strong despite his age. "A fishing vessel is waiting in the fjord. Get everyone to this point by 0100 hours and it will take you to a British submarine rendezvous."
 
 Something that had not been present for most of the past two days settled in my chest. A plan.
 

@@ -92,9 +92,13 @@ Wagner. The same SS officer who had been tightening security in the Narvik regio
 
 "I need three days to observe before I touch anything," I said. "Courier networks collapse when people move too quickly after a compromise."
 
-Aas nodded. "I expected that. There's a room arranged in Sagene. A woman named Borghild -- she runs a boarding house, has done since her husband died. She knows enough to ask nothing."
+Aas nodded. "I expected that. The room in Sagene -- Borghild's place. You've settled in?"
 
-He gave me the address by describing it in relation to landmarks rather than naming it directly, then folded his newspaper and walked away without another word. The abruptness of it reminded me of Frøya in Trondheim. Resistance had bred a particular economy of expression in these people -- nothing said that didn't need to be, nothing kept that needed to be discarded.
+"Yes."
+
+"Good. She knows enough to ask nothing."
+
+He folded his newspaper and walked away without another word. The abruptness of it reminded me of Frøya in Trondheim. Resistance had bred a particular economy of expression in these people -- nothing said that didn't need to be, nothing kept that needed to be discarded.
 
 ---
 
@@ -138,11 +142,7 @@ Once, in the second week, I came down for water at an odd hour and found her at 
 
 She poured a second glass and pushed it across the table. Aquavit, home-brewed, sharp and clean. We sat for a while in the kitchen without talking, which was its own kind of conversation.
 
-"Your son?" I asked, after a while. I had seen the photograph on the mantelpiece -- a young man in work clothes, grinning at whoever held the camera.
-
-"Somewhere in Germany," she said. "Forced labour. Eight months now." A pause. "I receive cards. Standard form, pre-approved text. He is well. He is being treated fairly."
-
-"I'm glad."
+I had seen the photograph on the mantelpiece -- a young man in work clothes, grinning at whoever held the camera. Her son, I assumed. She did not mention him and I did not ask. There were things people carried in occupied cities that did not benefit from being spoken aloud to strangers, even useful strangers, and I respected the silence around it.
 
 She looked at me over her glass. "Are you doing something useful?" she asked, in the direct manner of a person who had decided indirect questions were a waste of time she didn't have.
 

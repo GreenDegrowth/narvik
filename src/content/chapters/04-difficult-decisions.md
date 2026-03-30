@@ -248,7 +248,7 @@ I marked it with a wooden cross -- his name, the date. Nothing else. No rank, no
 
 So I stood over the grave in silence, which was probably what he would have preferred anyway. Kristian had been suspicious of speeches.
 
-The fjord was visible from where I stood. Grey in the morning light, still and quiet in the way it was always quiet, indifferent to everything on its banks. Somewhere below its surface, the _Blücher_ was still there -- that eight thousand tonnes of German certainty that the Oscarsborg guns had dealt with in a single April morning. Kristian had laughed telling me about it. He had mimed the explosion with both hands and then rubbed them together and said _a thousand Germans taking an April swim_ with the brief satisfied grin he reserved for things that had gone right.
+The fjord was visible from where I stood. Grey in the morning light, still and quiet in the way it was always quiet, indifferent to everything on its banks. Far to the south, at the bottom of Oslofjord, the _Blücher_ was still there -- that eight thousand tonnes of German certainty that the Oscarsborg guns had dealt with in a single April morning. Kristian had laughed telling me about it. He had mimed the explosion with both hands and then rubbed them together and said _a thousand Germans taking an April swim_ with the brief satisfied grin he reserved for things that had gone right.
 
 He had been right about most things, in the end. The British. The arithmetic of the war. The question of what we owed the country we were standing on.
 

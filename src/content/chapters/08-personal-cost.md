@@ -28,7 +28,7 @@ The losses she referred to had been our most significant success to date -- thre
 
 "They're planning something," Ingrid said. "London has increased requests for coastal intelligence tenfold in recent months."
 
-My attention drifted briefly to the lodge's single window, where frost had formed intricate patterns across the glass. Beyond, the mountains were still and white under the stars. I had learned these ridgelines well enough that I sometimes saw them when I closed my eyes.
+My attention drifted briefly to the lodge's single window, where frost had formed intricate patterns across the glass. Beyond, the mountains were still and white under the stars.
 
 "Solberg." Dahl's voice pulled me back. "You'll lead the observation team. You know Vestfjorden better than most."
 
