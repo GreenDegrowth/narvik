@@ -5,16 +5,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm run dev       # dev server at localhost:4321
-npm run build     # production build to ./dist/
-npm run preview   # preview the production build
-npm run format    # Prettier (astro, organize-imports, packagejson plugins)
-npm run lint      # ESLint with auto-fix (JS/TS/astro, unicorn ruleset)
+pnpm dev       # dev server at localhost:4321
+pnpm build     # production build to ./dist/
+pnpm preview   # preview the production build
+pnpm format    # Prettier (astro, organize-imports, packagejson plugins)
+pnpm lint      # ESLint with auto-fix (JS/TS/astro, unicorn ruleset)
 ```
 
-There are no tests. CI runs `npm run build` on Node 24.x. Run `npm run build` locally before committing to catch type errors.
+There are no tests. CI runs `pnpm build` on Node 24.x. Run `pnpm build` locally before committing to catch type errors.
 
-Lefthook runs Prettier then ESLint (`--fix`) automatically on staged files at `pre-commit`. Run `npx lefthook install` after cloning to activate hooks. Run `npm run format` or `npm run lint` manually.
+Lefthook runs Prettier then ESLint (`--fix`) automatically on staged files at `pre-commit`. Run `pnpm exec lefthook install` after cloning to activate hooks. Run `pnpm format` or `pnpm lint` manually.
 
 ## Safety
 

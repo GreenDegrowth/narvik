@@ -2,9 +2,9 @@ pre-commit:
   commands:
     format:
       glob: "*.{astro,ts,css,json,md}"
-      run: npx prettier --write --experimental-cli {staged_files}
+      run: pnpm exec prettier --write --experimental-cli {staged_files}
       stage_fixed: true
     lint:
       glob: "*.{astro,ts,css,md}"
-      run: npx eslint --fix {staged_files}
+      run: pnpm exec eslint --fix {staged_files}
       stage_fixed: true
