@@ -42,13 +42,13 @@ All commands are run from the root of the project:
 
 | Command                | Action                                     |
 | :--------------------- | :----------------------------------------- |
-| `npm install`          | Install dependencies                       |
-| `npm run dev`          | Start local dev server at `localhost:4321` |
-| `npm run build`        | Build production site to `./dist/`         |
-| `npm run preview`      | Preview build locally before deploying     |
-| `npm run format`       | Format code with Prettier                  |
-| `npm run lint`         | Lint and auto-fix with ESLint              |
-| `npx lefthook install` | Install git hooks (run after cloning)      |
+| `pnpm install`              | Install dependencies                       |
+| `pnpm dev`                  | Start local dev server at `localhost:4321` |
+| `pnpm build`                | Build production site to `./dist/`         |
+| `pnpm preview`              | Preview build locally before deploying     |
+| `pnpm format`               | Format code with Prettier                  |
+| `pnpm lint`                 | Lint and auto-fix with ESLint              |
+| `pnpm exec lefthook install` | Install git hooks (run after cloning)      |
 
 ## Chapter Structure
 
