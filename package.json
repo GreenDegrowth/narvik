@@ -22,7 +22,7 @@
     "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-astro": "^1.6.0",
-    "eslint-plugin-unicorn": "^63.0.0",
+    "eslint-plugin-unicorn": "^64.0.0",
     "lefthook": "^2.1.4",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
