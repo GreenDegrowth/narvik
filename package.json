@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "license": "CC-BY-NC-SA-4.0",
   "type": "module",
-  "packageManager": "pnpm@10.29.3",
   "scripts": {
     "astro": "astro",
     "build": "astro build",
@@ -30,5 +29,6 @@
     "prettier-plugin-packagejson": "^3.0.2",
     "remark-smartypants": "^3.0.2",
     "typescript-eslint": "^8.57.2"
-  }
+  },
+  "packageManager": "pnpm@10.29.3"
 }
