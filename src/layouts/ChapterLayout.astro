@@ -20,7 +20,7 @@ const { title, order, slug, description, epigraph, epigraphAuthor, prevChapter, 
 const chapterNumber = String(order).padStart(2, "0");
 ---
 
-<Layout title={`${title} — ${config.title}`} description={description ?? config.description}>
+<Layout title={`${title} — ${config.title}`} description={description ?? config.description} ogType="article">
   <script
     type="application/ld+json"
     set:html={JSON.stringify({
@@ -203,10 +203,6 @@ const chapterNumber = String(order).padStart(2, "0");
 
   .site-license {
     margin-top: var(--space-lg);
-    font-family: var(--font-sans);
-    font-size: var(--text-xs);
-    color: var(--text-muted);
-    letter-spacing: 0.06em;
   }
 
   .chapter-pagination {

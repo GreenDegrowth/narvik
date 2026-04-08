@@ -30,12 +30,12 @@ const chapters = allChapters.toSorted((a, b) => a.data.order - b.data.order);
       <div class="book-rule" aria-hidden="true"></div>
     </header>
 
-    <a id="continue-btn" href="/" class="continue-btn" hidden>
-      <span class="continue-btn__label">Continue reading</span>
-      <span class="continue-btn__title" id="continue-title"></span>
-    </a>
-
     <main id="main-content">
+      <a id="continue-btn" href="/" class="continue-btn" hidden>
+        <span class="continue-btn__label">Continue reading</span>
+        <span class="continue-btn__title" id="continue-title"></span>
+      </a>
+
       <nav aria-label="Table of contents">
         <ol class="chapter-list">
           {
@@ -146,14 +146,24 @@ const chapters = allChapters.toSorted((a, b) => a.data.order - b.data.order);
 
   @media (prefers-reduced-motion: no-preference) {
     .continue-btn {
-      transition:
-        border-color 0.2s ease,
-        color 0.2s ease;
+      transition: border-color 0.2s ease;
+    }
+
+    .continue-btn__label,
+    .continue-btn__title {
+      transition: color 0.2s ease;
     }
   }
 
   .continue-btn:hover {
     border-color: var(--accent);
+  }
+
+  .continue-btn:hover .continue-btn__label {
+    color: var(--accent);
+  }
+
+  .continue-btn:hover .continue-btn__title {
     color: var(--accent);
   }
 

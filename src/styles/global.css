@@ -28,6 +28,8 @@
   --measure: 65ch;
   --measure-wide: 80ch;
   --page-padding: clamp(1rem, 5vw, 2rem);
+
+  color-scheme: dark light;
 }
 
 @media (prefers-color-scheme: light) {
@@ -277,4 +279,9 @@ a:hover {
   clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
